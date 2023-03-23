@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Bosh sahifa{% endblock title %}
+
+{% block content %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Bu platformada siz zamonaviy kasblar doirasida bilimlarga ega bo'lasiz. Istasangiz bilimlaringizni sinashingiz ham mumkin</h1>
+        <hr class="my-6">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">O'qishni Boshlash</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Bilimni sinash</a>
+        </p>
+        <header>
+            <style>
+              body {
+                background-image: url('media/images/Frame.png');
+                background-size: cover;
+              }
+            </style>
+        </header>
+    </div>
+
+{% endblock content %}
